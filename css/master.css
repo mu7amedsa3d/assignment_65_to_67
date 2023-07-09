@@ -1,0 +1,124 @@
+/* assignment 1 */
+.one {
+  width: 300px;
+  height: 200px;
+  background-color: #eeeeee;
+  color: #03a9f4;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid #bebebe;
+}
+
+.one::after {
+  content: "";
+  width: 300px;
+  height: 200px;
+  background-color: #03a9f4;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-5deg) scale(1.035);
+}
+.one::before {
+  content: "";
+  width: 300px;
+  height: 200px;
+  background-color: #e91e63;
+  position: absolute;
+  z-index: -2;
+  transform: rotate(5deg) scale(1.035);
+}
+
+/* assignment 2 */
+
+.two {
+  width: 200px;
+  height: 200px;
+  margin-left: 50%;
+  margin-bottom: 20%;
+  transform: translate(-50%, 30%);
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 1px solid #bebebe;
+}
+
+.two::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #e91e63 #e91e63 #e91e63 transparent;
+}
+.two::before {
+  content: "";
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #03a9f4 transparent #03a9f4 #03a9f4;
+}
+
+/* assignment 3 */
+
+.tree {
+  width: 200px;
+  height: 200px;
+  margin-left: 50%;
+  margin-bottom: 20%;
+  transform: translate(-50%, 30%);
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 1px solid #bebebe;
+}
+
+.tree::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #e91e63 #e91e63 #e91e63 transparent;
+  transition: 0.5s;
+}
+
+.tree::before {
+  content: "";
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #03a9f4 transparent #03a9f4 #03a9f4;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.tree:hover::after,
+.tree:hover::before {
+  transform: rotate(360deg);
+}
